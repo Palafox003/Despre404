@@ -30,6 +30,11 @@ class Db{
 						</div>';
 				}
 	}
+	public function buscar($campos,$tabla,$condicion){
+		$consulta="select $campos from $tabla where $condicion";
+			$result=$this->con->query($consulta);
+				return $result;
+	}
 
 }
 ?>
