@@ -35,6 +35,18 @@ class Db{
 			$result=$this->con->query($consulta);
 				return $result;
 	}
+	public function actualizar($tabla,$datos,$condicion){
+		$consulta="update $tabla set $datos where $condicion";
+		echo $consulta;
+			$result=$this->con->query($consulta);
+				if($result){
+				echo '<div class="alert alert-success" role="alert"> Datos Actualizados de forma correcta. </div>';
+			}else{
+				echo '<div class="alert alert-danger" role="alert">
+						  Error al Actualizar los datos.
+						</div>';
+				}
+	}
 
 }
 ?>

@@ -43,6 +43,7 @@
 				    <label for="genero">Genero</label>
 				    <select class="form-control" name="genero" id="genero">
 				      <option value="Acción">Acción</option>
+				      <option value="Acción"></option>
 				      <option value="Comedia">Comedia</option>
 				      <option value="Terror">Terror</option>
 				      <option value="Romance">Romance</option>
